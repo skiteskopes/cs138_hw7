@@ -3,8 +3,8 @@ accepting: {q2}
 
 q0 (_,_ -> S $,q1)
 
-q1(_,S -> aSbbb,q1) 
-q1(_,S -> aSbb,q1)   
+q1(_,S -> aaaSb,q1) 
+q1(_,S -> aaSb,q1)   
 q1(a,a -> _,q1) 
 q1(b,b -> _,q1) 
 q1(_,S -> _,q1) 
