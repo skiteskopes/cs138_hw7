@@ -1,14 +1,8 @@
 start: q0
-accepting: {q0,q2}
+accepting: {q0,q1}
 
 
-q0 (_,_ -> S $,q1)
+q0 (_,_ -> $,q1)
 
-q1(_,S -> a,q1) (_,S -> ab,q1)
-q1(_,S -> aS,q1) (_,S -> SaSbS,q1) (_,S -> Sab,q1) (_,S -> aSb,q1) (_,S -> abS,q1) (_,S -> Sa,q1) 
-
-
-q1(a,a -> _,q1) 
-q1(b,b -> _,q1) 
-q1(_,$ -> _,q2) 
-
+q1(a, _ -> a,q1) (b,a -> _,q1) (b,$ -> _,q3) 
+q3(a,_ -> _,q3) (b,_ -> _,q3) 
