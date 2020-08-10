@@ -1,5 +1,5 @@
 start: q0
-accepting: {q2}
+accepting: {q0,q2}
 
 q0 (_,_ -> S $,q1)
 
