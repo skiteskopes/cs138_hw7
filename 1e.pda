@@ -1,5 +1,5 @@
 start: q0
-accepting: {q0,q2,q6,q4}
+accepting: {q0,q2,q5}
 
 q0 (_,_ -> $,q1) (_,_ -> $,q4)
 q1(a,_ -> a,q3) (b,A -> _,q1) (_,$ -> _,q2)  
